@@ -51,7 +51,7 @@ export default {
         }
     },
     mounted() {
-        this.fetch_data()
+        this.fetch_data() 
     }, 
     methods: {
         fetch_data(){

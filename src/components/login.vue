@@ -63,23 +63,16 @@
 export default {
     name: "login",
     data() {
-        return {
-            name:'',
-            email:'',
-            phone:'',
-            department:'',
+        return { 
+            email:'',  
             password:'',
             isLoading:false,
-            err:'',
-            departments:[]
+            err:'', 
         }
-    },
+    }, 
     mounted() {
-        this.$http.get('auth/departments').then(data => {
-            this.departments=data.data;
-        }).catch(e=>{
-            console.log(e)
-        }) 
+        
+    console.log(this.$route.name)
     },
     methods: {
         login(){

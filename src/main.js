@@ -15,7 +15,7 @@ window.Echo = new Echo({
     key: 'e9895d9d91cfbe671a61',
     cluster: 'ap2',
     encrypted:true,
-    authEndpoint:process.env.VUE_APP_API_REAL + 'broadcasting/auth',
+    authEndpoint:process.env.VUE_APP_API + 'broadcasting/auth',
     auth: {
         headers: {
             'Authorization': `Bearer `+ localStorage.getItem('token'),
