@@ -70,9 +70,8 @@ export default {
             err:'', 
         }
     }, 
-    mounted() {
-        
-    console.log(this.$route.name)
+    mounted() { 
+        console.log(window.location.pathname)
     },
     methods: {
         login(){

@@ -12,7 +12,7 @@ axios.interceptors.response.use(
   error => {
     const { status } = error.response;
     if (status === 401) {
-      if(this.$route.name != 'login'){
+      if(window.location.pathname != '/auth/login'){
         store.dispatch('logout') 
       }
       
