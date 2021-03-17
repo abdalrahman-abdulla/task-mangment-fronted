@@ -69,10 +69,7 @@ export default {
             isLoading:false,
             err:'', 
         }
-    }, 
-    mounted() { 
-        console.log(window.location.pathname)
-    },
+    },  
     methods: {
         login(){
             this.isLoading=true

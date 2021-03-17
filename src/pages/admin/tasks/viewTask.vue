@@ -147,8 +147,7 @@ export default {
         },
         accept(a){
             this.$http.post('admin/task/'+a+'/acceptrequest').then(data => {  
-                this.reqModel=true
-                console.log(data.data.data)
+                this.reqModel=true 
                 this.task=data.data.data
             })
         },

@@ -48,8 +48,7 @@ export default {
         }
     }, 
     mounted() {
-        this.fetch_task()
-        console.log(this.$route.params.id)
+        this.fetch_task() 
     },
     methods: { 
         fetch_task(){

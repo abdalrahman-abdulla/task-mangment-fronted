@@ -24,8 +24,7 @@ export default {
         }
     },
     mounted() { 
-        this.$http.get('admin/department').then(data => { 
-            console.log(data.data)
+        this.$http.get('admin/department').then(data => {  
             this.departments=data.data;    
         }) 
     }, 

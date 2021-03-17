@@ -55,8 +55,7 @@ export default {
     }, 
     methods: {
         fetch_data(){
-            this.$http.get('admin/task?page=' + this.currentPage).then(data => { 
-                console.log(data.data)
+            this.$http.get('admin/task?page=' + this.currentPage).then(data => {  
                 this.tasks=data.data.data;   
                 this.page_info=data.data.page_info
             })
