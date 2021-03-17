@@ -20,8 +20,8 @@
                             placeholder="enter department name please" 
                         ></b-form-input>
                     </b-input-group>
-                    <b-form-invalid-feedback class="d-block" v-if="errors[0] || err['name']">
-                        {{errors[0] || err['name'][0]}}
+                    <b-form-invalid-feedback class="d-block" v-if="errors[0]">
+                        {{errors[0] }}
                     </b-form-invalid-feedback> 
                 </ValidationProvider> 
                 <div class="card-footer d-flex-column justify-content-center bg-white">
@@ -49,6 +49,7 @@ export default {
     }, 
     mounted() {
         this.fetch_task()
+        console.log(this.$route.params.id)
     },
     methods: { 
         fetch_task(){
@@ -61,7 +62,7 @@ export default {
         save_department(){  
             this.isLoading=true
             this.$http.put('admin/department/'+this.department.id,this.department).then(() => {  
-                this.$router.push({name:'viewtasks'})
+                this.$router.push({name:'viewdepartments'})
             }).catch((e)=>{
                 console.log(e) 
             }).then(()=>{this.isLoading=false;})

@@ -51,8 +51,8 @@ export default {
     methods: {
         save_department(){  
             this.isLoading=true
-            this.$http.post('admin/department/',this.department).then(() => {  
-                this.$router.push({name:'viewtasks'})
+            this.$http.post('admin/department',this.department).then(() => {  
+                this.$router.push({name:'viewdepartments'})
             }).catch((e)=>{
                 this.err=e.response.data.errors;
             }).then(()=>{this.isLoading=false;})
