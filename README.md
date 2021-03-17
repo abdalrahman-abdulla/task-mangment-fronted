@@ -1,4 +1,4 @@
-# hrnistask
+# Hrins Task Mangment
 
 ## Project setup
 ```
