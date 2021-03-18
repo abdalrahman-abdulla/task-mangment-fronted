@@ -15,7 +15,7 @@
                         </b-input-group-prepend>
                         <b-form-input 
                             :type="field.type"
-                            max="999999"
+                            max="9999999"
                             v-model="task[field.name]"
                             :state="errors[0] ? false : null"
                             aria-describedby="input-live-help input-live-feedback"
