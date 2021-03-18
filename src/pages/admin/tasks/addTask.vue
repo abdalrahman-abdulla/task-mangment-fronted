@@ -176,7 +176,7 @@ export default {
             if(this.resources.length){
                 this.task.resources=this.resources;
             } 
-            this.$http.post('admin/task/',this.task).then(() => {  
+            this.$http.post('admin/task',this.task).then(() => {  
                 this.$router.push({name:'viewtasks'}) 
             }).catch((e)=>{
                 console.log(e)
