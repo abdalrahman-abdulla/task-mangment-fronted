@@ -139,12 +139,6 @@ export default {
                 this.task=data.data.data;   
             })
         },
-        get_requests(){ 
-            this.$http.get('admin/task/'+this.$route.params.id+'/requests' ).then(data => { 
-                this.requests=data.data.data
-                this.reqModel=true
-            })
-        },
         accept(a){
             this.$http.post('admin/task/'+a+'/acceptrequest').then(data => {  
                 this.reqModel=true 
