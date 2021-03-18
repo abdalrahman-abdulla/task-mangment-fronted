@@ -2,8 +2,8 @@
 build Spa with js framework vue.js
 
 # Models
-- Admin with route prefix: admin/
-- User with route prefix: /
+- Admin - route prefix: admin/
+- User - route prefix: /
 
 ## Project setup
 ```
